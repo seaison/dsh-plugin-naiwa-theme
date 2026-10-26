@@ -1,76 +1,193 @@
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/seaison/dsh-plugin-naiwa-theme/main/docs/images/museum-mark.svg" width="80" alt="奶蛙美术馆的金色奶蛙图标" />
+
 # DSH 奶蛙美术馆
 
-DSH Desktop / Web 主题插件：八幅奶蛙名画壁纸、爆笑桌宠、摸鱼钟、拍立得便利贴、余额与峰谷云朵气泡，以及两个离线小游戏。
+**把工作区，搬进奶蛙的美术馆。**
 
-当前正式版：**v0.8.0**。可从 [GitHub Releases](https://github.com/seaison/dsh-plugin-naiwa-theme/releases/latest) 获取完整安装包，更新内容见 [CHANGELOG.md](CHANGELOG.md)。已在 DSH Desktop 2.0.18 / Harness 0.2.1-rc.2 兼容模式验证。
+八幅名画，一只会大笑的奶蛙，还有恰到好处的摸鱼时间。
 
-## 使用
+[![正式版 v0.8.0](https://img.shields.io/badge/release-v0.8.0-E8BD4B?style=flat-square&labelColor=435543)](https://github.com/seaison/dsh-plugin-naiwa-theme/releases/latest)
+[![构建与测试](https://github.com/seaison/dsh-plugin-naiwa-theme/actions/workflows/ci.yml/badge.svg)](https://github.com/seaison/dsh-plugin-naiwa-theme/actions/workflows/ci.yml)
+[![代码采用 MIT 许可](https://img.shields.io/badge/code-MIT-91AB66?style=flat-square&labelColor=435543)](https://github.com/seaison/dsh-plugin-naiwa-theme/blob/main/NOTICE.md)
 
-- **左键点击奶蛙**：播放用户提供 GIF 中的真实捧腹大笑动作，动作开始约 0.5 秒后播放选定的约 15.7 秒笑声，结束后恢复同一只奶蛙的待机姿势。起笑动作播放一次，随后循环大笑片段；大笑时再次点击会立即停止音频与动作、恢复待机；停止后再点即可重新播放。静音时完整播放一次约 3.2 秒的动作。关闭桌宠或播放中静音会停止当前笑声。
-- **右键点击奶蛙**（触屏长按，键盘 Shift+F10）：在指针附近打开「奶蛙的小世界」，靠近窗口边缘会翻转，并避开奶蛙，点击外部或按 Esc 关闭。
-- **随机壁纸**：在八套名画主题中切换，同时更换配色；避开当前壁纸。
-- **奶蛙美图**：三张 1:1 恶搞美图——白丝芭蕾蛙、黑丝红毯蛙、黑白双蛙。支持 3×3、4×4、5×5 实体散片拼图，随机散落的凹凸片块可以自由拖动，靠近正确位置会吸附固定，包含计时、移动次数、原图查看和完成判定。键盘可用方向键移动片块，Shift 微调，空格放置。
-- **合成大奶蛙**：奶蛙下落、碰撞堆叠、反弹滚动、同级合并，11 个等级，支持最高分、失败重开；池塘与荷叶场景、大头奶蛙、下一只头像和 11 级成长图鉴。点击画布或按空格投下，方向键瞄准。
-- **小游戏 BGM**：拼图配舒缓的「画廊慢时光」，合成配轻快的「池塘跳跳舞」。两首原创旋律在本机合成并循环，无需联网。游戏上方可以播放／暂停、调整独立音乐音量，偏好自动保存；切到后台暂停，返回继续，退出游戏立即停止并释放音频资源。浏览器限制自动播放时可点击播放按钮。
-- **奶蛙摸鱼钟**：右键奶蛙 → 奶蛙摸鱼钟。默认专注 25 分钟、休息 5 分钟，可调整时长、暂停、继续和重置。专注时看书；休息先伸懒腰，再喝奶茶；每分钟再伸展一次。到点举牌，点击开始下一段或稍后再说。计时在关闭面板后继续，存档随界面重新载入恢复；今日专注次数按北京时间计算。
-- **奶蛙便利贴**：采用麻绳、木夹和微微倾斜的白边拍立得纸卡样式，灰白纸面保留完整编辑空间。右键奶蛙 → 奶蛙便利贴，可添加多张便签；新便签从右上角开始，后续向左下错开。拖动顶栏摆放，下方「固定位置」锁定位置，「复制便签」复制全文；固定后仍可编辑。文字、位置与固定状态自动保存在本机。右上角收起后，在设置中点击「显示收起的便签」即可恢复；设置中也可新增便签。
-- **设置**：分为「壁纸与配色」「桌宠与气泡」「奶蛙摸鱼钟」「启动动画」「奶蛙便利贴」五个分类；顶部导航与底部完成按钮固定，内容单独滚动。支持左右方向键、Home / End 切换分类，更改即时生效并自动保存。
-- **回复状态配色**：「深度求索中」的文字与流光跟随八套主题配色，兼顾浅色和深色主题；插件弹窗和便签的关闭图标统一居中，点击区域为 32×32。
-- **移动奶蛙**：直接按住奶蛙拖动，松开保存位置；拖动不会触发大笑。拖到聊天区左半边时，奶蛙转向右侧，云朵随之换到右上角；拖回右半边则恢复。
-- **云朵气泡**：点击奶蛙才显示放大的余额与峰谷信息；点击信息气泡显示一张随机表情，再点表情气泡直接收起。下一次点击奶蛙重新从信息开始。鼠标经过、移动、获取焦点不会弹出或延长气泡；拖动和右键打开菜单时收起。闲置 6 秒自动隐藏。气泡随桌宠左右换边，文字保持正向，余额每分钟自动更新。
-- 左侧工作区有「奶蛙灵感池」、与美术馆设置页一致的金色奶蛙图标，以及柔和的工作区卡片。
-- DSH 自带设置中也有「奶蛙美术馆」页面。切换原生浅色、深色或跟随系统会退出奶蛙壁纸配色，桌宠可独立保留。
+**[下载正式版](https://github.com/seaison/dsh-plugin-naiwa-theme/releases/latest)** · **[快速安装](#快速安装)** · **[名画画廊](#八幅名画八种心情)** · **[使用手册](https://github.com/seaison/dsh-plugin-naiwa-theme/blob/main/docs/usage.md)**
 
-## 自己的壁纸与启动片头
+<img src="https://raw.githubusercontent.com/seaison/dsh-plugin-naiwa-theme/main/docs/images/startup.png" width="100%" alt="DSH 实机启动画面：湖边奶蛙与逐字浮现的欢迎语，奶蛙已经到了，你也慢慢来" />
 
-右键奶蛙 → 设置 →「壁纸与配色」→「我的风景」→ 导入图片。支持 JPG、PNG、WebP、AVIF、GIF，最大 20 MB、5000 万像素。图片保存在当前 DSH 浏览器环境的 IndexedDB 中，不上传到服务器；重启保留。切换馆藏壁纸后，导入图片仍在本机收藏，可以再次使用或移除。
+<sub>DSH Desktop 实机画面 · 缓慢的风，轻柔的钢琴，给开始工作留一点仪式感。</sub>
 
-点击左侧「奶蛙灵感池」会打开歪道理卡片，内置 36 句原创无厘头语录，连续换句不会重复。
+</div>
 
-启动片头使用用户提供的《风经过的地方》1080p 视频。默认以 **0.6 倍速**播放约 **8.4 秒**，文字以屏幕左侧 **1/4** 位置为中轴，三行字号从上到下依次增大，最后一行最醒目，逐字轻柔浮现，伴随少量平滑位移并停留；最后 **1.3 秒**逐渐模糊、淡出，同时让聊天界面清晰浮现。配有原创轻柔钢琴琶音，从乐句开头按正常音高独立播放，以 1.1 秒平滑淡入，并随过渡从当前音量自然渐弱；视频原音轨保持静音。可关闭钢琴启动音，支持跳过、Esc、预览、关闭片头及切换速度。启用系统减少动态效果时不自动播放。若浏览器限制自动播音，可点击片头左下角「播放钢琴声」。
+## 先认识这位新同事
 
-片头在 DSH 客户端界面载入插件后播放，每次完整载入播放一次；它属于插件界面，不替换 DSH Desktop 自身的原生启动窗口。视频读取异常会自动退出，避免阻挡使用。原始视频保留原画质，慢放和模糊在播放时完成。
+奶蛙美术馆是一款 **DSH Desktop / Web 主题插件**。它会把名画、奶蛙和一点无厘头带进工作区：该专注时陪你看书，该休息时陪你喝奶茶，偶尔还能笑到捧住肚子。
 
-## 安装正式版
+| 🖼️ 随时换一幅风景 | 🐸 住在聊天区的奶蛙 | ☕ 专注与摸鱼都有节奏 |
+| --- | --- | --- |
+| 八套名画壁纸与配色，也可以导入自己的图片。 | 点击大笑、拖动换位、右键打开「奶蛙的小世界」。 | 默认 25 分钟专注、5 分钟休息，到点举牌提醒。 |
+| **🧩 两个小游戏** | **📝 把小事夹在风里** | **🎹 从一阵风开始** |
+| 散片拼图与合成大奶蛙，各有一首原创循环 BGM。 | 麻绳、木夹、拍立得便签，支持固定与复制。 | 慢放片头、逐字浮现、钢琴渐入与模糊过渡。 |
 
-从 Release 下载 `dsh-plugin-naiwa-theme-0.8.0.tgz` 与 `SHA256SUMS.txt`，在下载目录的 DSH 终端执行，Desktop 使用 `desktop` profile：
+## 八幅名画，八种心情
+
+森林、海岸、花园、星夜。挑一幅今天想住进去的风景，壁纸与界面配色一起切换。
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <a href="https://github.com/seaison/dsh-plugin-naiwa-theme/blob/main/wallpapers/01-pine-forest-morning.png"><img src="https://raw.githubusercontent.com/seaison/dsh-plugin-naiwa-theme/main/wallpapers/01-pine-forest-morning.png" width="100%" alt="松林晨蛙：奶蛙走进晨雾中的森林名画" /></a><br />
+      <strong>01 · 松林晨蛙</strong><br /><sub>在晨雾里，慢慢开始。</sub>
+    </td>
+    <td width="50%" align="center">
+      <a href="https://github.com/seaison/dsh-plugin-naiwa-theme/blob/main/wallpapers/02-lantern-garden-dusk.png"><img src="https://raw.githubusercontent.com/seaison/dsh-plugin-naiwa-theme/main/wallpapers/02-lantern-garden-dusk.png" width="100%" alt="花灯暮蛙：暮色花园中的奶蛙与暖色灯光" /></a><br />
+      <strong>02 · 花灯暮蛙</strong><br /><sub>给晚一点的灵感，留一盏灯。</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/seaison/dsh-plugin-naiwa-theme/blob/main/wallpapers/03-skagen-blue-hour.png"><img src="https://raw.githubusercontent.com/seaison/dsh-plugin-naiwa-theme/main/wallpapers/03-skagen-blue-hour.png" width="100%" alt="蓝岸双蛙：两只奶蛙在蓝色海岸散步" /></a><br />
+      <strong>03 · 蓝岸双蛙</strong><br /><sub>海风很轻，想法可以很远。</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/seaison/dsh-plugin-naiwa-theme/blob/main/wallpapers/04-red-fuji-clear-morning.png"><img src="https://raw.githubusercontent.com/seaison/dsh-plugin-naiwa-theme/main/wallpapers/04-red-fuji-clear-morning.png" width="100%" alt="赤富士望蛙：北斋浮世绘风格的富士山与奶蛙" /></a><br />
+      <strong>04 · 赤富士望蛙</strong><br /><sub>山在那里，奶蛙也在那里。</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/seaison/dsh-plugin-naiwa-theme/blob/main/wallpapers/05-starry-frog-night.png"><img src="https://raw.githubusercontent.com/seaison/dsh-plugin-naiwa-theme/main/wallpapers/05-starry-frog-night.png" width="100%" alt="星月夜蛙：奶蛙坐在旋转星空下的山坡上" /></a><br />
+      <strong>05 · 星月夜蛙</strong><br /><sub>今晚的灵感，亮一点。</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/seaison/dsh-plugin-naiwa-theme/blob/main/wallpapers/06-pearl-earring-frog.png"><img src="https://raw.githubusercontent.com/seaison/dsh-plugin-naiwa-theme/main/wallpapers/06-pearl-earring-frog.png" width="100%" alt="珍珠耳环蛙：戴头巾和珍珠耳环的奶蛙肖像" /></a><br />
+      <strong>06 · 珍珠耳环蛙</strong><br /><sub>回头一看，是奶蛙。</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/seaison/dsh-plugin-naiwa-theme/blob/main/wallpapers/07-the-frog-scream.png"><img src="https://raw.githubusercontent.com/seaison/dsh-plugin-naiwa-theme/main/wallpapers/07-the-frog-scream.png" width="100%" alt="呐喊奶蛙：桥上的奶蛙与表现主义的流动天空" /></a><br />
+      <strong>07 · 呐喊奶蛙</strong><br /><sub>偶尔大叫一下，也很合理。</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/seaison/dsh-plugin-naiwa-theme/blob/main/wallpapers/08-water-lily-frog.png"><img src="https://raw.githubusercontent.com/seaison/dsh-plugin-naiwa-theme/main/wallpapers/08-water-lily-frog.png" width="100%" alt="睡莲池蛙：莫奈花园与睡莲池边的奶蛙" /></a><br />
+      <strong>08 · 睡莲池蛙</strong><br /><sub>让思绪在水面上漂一会儿。</sub>
+    </td>
+  </tr>
+</table>
+
+馆藏壁纸均为 1672×941 PNG。也可在 **设置 → 壁纸与配色 → 我的风景** 中导入 JPG、PNG、WebP、AVIF 或 GIF；图片保存在本机，支持最大 20 MB、5000 万像素。
+
+## 一只有点抽象、又有点贴心的桌宠
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/seaison/dsh-plugin-naiwa-theme/main/media/reaction-144.gif" width="150" alt="捧腹大笑的奶蛙动态表情" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/seaison/dsh-plugin-naiwa-theme/main/media/reaction-135.gif" width="150" alt="迈着小步走路的奶蛙动态表情" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/seaison/dsh-plugin-naiwa-theme/main/media/reaction-107.gif" width="150" alt="在夕阳里伸展手臂的奶蛙动态表情" />
+</p>
+
+<p align="center"><sub>云朵气泡里的部分原始动态表情；桌宠本体另有专用的大笑动作与笑声。</sub></p>
+
+| 你来操作 | 奶蛙会做什么 |
+| --- | --- |
+| **左键点一下** | 捧腹大笑，笑声约延迟 0.5 秒切入；再点一下立即停止。 |
+| **按住拖动** | 换个位置陪你；到左侧后，朝向与气泡位置一起翻转。 |
+| **右键点击** | 打开随机壁纸、小游戏、摸鱼钟、便签和设置。 |
+| **点击云朵气泡** | 余额与峰谷信息 → 随机表情 → 收起，闲置 6 秒自动隐藏。 |
+
+鼠标经过不会误弹气泡。触屏支持长按，键盘可用 Shift+F10 打开菜单。
+
+## 认真一会儿，摸鱼一会儿
+
+专注的时候，它安静看书；休息的时候，它先伸个懒腰，再喝一口奶茶。时间到了，奶蛙会举牌提醒你。
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/seaison/dsh-plugin-naiwa-theme/main/assets/pet-focus-states.png" width="480" alt="摸鱼钟四种奶蛙姿态：看书、伸懒腰、喝奶茶与举牌" />
+</p>
+
+**右键奶蛙 → 奶蛙摸鱼钟**。默认 **25 分钟专注 / 5 分钟休息**，支持调整时长、暂停、继续和重置。关闭面板后仍会计时，重新载入可以恢复；下一段由你手动开始。
+
+<details>
+<summary><strong>看看摸鱼钟的实机界面</strong></summary>
+
+<p align="center"><img src="https://raw.githubusercontent.com/seaison/dsh-plugin-naiwa-theme/main/docs/images/focus-clock.png" width="100%" alt="DSH 实机摸鱼钟：25 分钟倒计时、看书奶蛙、专注与休息切换和自定义时长" /></p>
+
+</details>
+
+## 两种摸鱼方式，都有自己的 BGM
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="https://raw.githubusercontent.com/seaison/dsh-plugin-naiwa-theme/main/docs/images/jigsaw.png" width="100%" alt="奶蛙美图拼图实机界面：凹凸拼片散落在画板上" /><br />
+      <strong>🧩 奶蛙美图 · 拼图</strong><br /><sub>从散落的小拼片里，把一幅奶蛙美图慢慢找回来。</sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="https://raw.githubusercontent.com/seaison/dsh-plugin-naiwa-theme/main/docs/images/merge-game.png" width="100%" alt="合成大奶蛙实机界面：池塘投放区、下一只奶蛙和成长图鉴" /><br />
+      <strong>🍉 合成大奶蛙</strong><br /><sub>碰一碰，一起长大。下一只会合成多大？</sub>
+    </td>
+  </tr>
+</table>
+
+| 奶蛙美图 | 合成大奶蛙 |
+| --- | --- |
+| 三张 1:1 恶搞美图，支持 **3×3 / 4×4 / 5×5**。 | 下落、碰撞、堆叠、反弹与同级合并，共 **11 个等级**。 |
+| 凹凸散片自由拖动，接近正确位置自动吸附。 | 记录最高分，支持失败重开与下一只预览。 |
+| 配乐 **「画廊慢时光」**，76 BPM 的舒缓旋律。 | 配乐 **「池塘跳跳舞」**，108 BPM 的轻快节奏。 |
+
+<details>
+<summary><strong>这次要拼哪一只奶蛙？</strong></summary>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/seaison/dsh-plugin-naiwa-theme/main/assets/puzzle-white-ballet.png" width="30%" alt="白丝芭蕾蛙：穿着白色芭蕾舞裙的恶搞奶蛙" />
+  <img src="https://raw.githubusercontent.com/seaison/dsh-plugin-naiwa-theme/main/assets/puzzle-black-runway.png" width="30%" alt="黑丝红毯蛙：站在华丽红毯上的恶搞奶蛙" />
+  <img src="https://raw.githubusercontent.com/seaison/dsh-plugin-naiwa-theme/main/assets/puzzle-twin-divas.png" width="30%" alt="黑白双蛙：装扮成时尚搭档的两只奶蛙" />
+</p>
+
+<p align="center"><sub>白丝芭蕾蛙 · 黑丝红毯蛙 · 黑白双蛙</sub></p>
+
+</details>
+
+两首原创 BGM 在本机合成，可以独立调节音量、暂停和恢复；游戏切到后台暂停，退出后停止。无需联网下载音乐。
+
+## 再给日常留一点可爱
+
+- **奶蛙便利贴**：麻绳、木夹与白边拍立得。新便签从右上角开始，后续向左下错开；支持拖动、固定、复制、自动保存和收起恢复。
+- **奶蛙灵感池**：内置 36 句看似很有道理、其实很无厘头的歪道理。连续换句不会重复。
+- **启动仪式感**：0.6 倍速的风景片头，逐字浮现的欢迎语、1.1 秒钢琴渐入与最后 1.3 秒模糊过渡。可以预览、跳过或关闭。
+- **统一的工作区**：金色奶蛙图标、随主题变化的回复状态、五个分类的设置页，以及对齐的关闭按钮。
+
+## 快速安装
+
+**当前正式版 v0.8.0**，已在 **DSH Desktop 2.0.18 / Harness 0.2.1-rc.2 兼容模式**实机验证。
+
+**1.** 从 **[Releases 下载完整安装包](https://github.com/seaison/dsh-plugin-naiwa-theme/releases/latest)** `dsh-plugin-naiwa-theme-0.8.0.tgz` 和 `SHA256SUMS.txt`。
+
+**2.** 在下载目录的 DSH 终端执行：
 
 ```sh
 dsh plugin --profile desktop add ./dsh-plugin-naiwa-theme-0.8.0.tgz
 ```
 
-Web 将 `--profile desktop` 改为 `--profile web`。安装后重新启动相应 DSH 应用。包内包含构建后的客户端和全部运行素材，无需额外下载图片或安装 npm 运行时依赖。macOS 可使用 `shasum -a 256 -c SHA256SUMS.txt` 核对附件。
+**3.** 重启对应 DSH 应用，在设置中打开「奶蛙美术馆」。
 
-## 从源码安装
+Web 用户将 `--profile desktop` 换为 `--profile web`。macOS 可用 `shasum -a 256 -c SHA256SUMS.txt` 核对附件。完整安装包已包含图片、表情和音视频，插件运行不需要额外下载素材。
 
-先克隆仓库并进入目录：
+<details>
+<summary><strong>我想从源码安装 / 参与开发</strong></summary>
+
+需要 Node.js **22.19 以上的 22.x** 或 **24 以上版本**。没有 npm 依赖，无需 `npm install`。
 
 ```sh
 git clone https://github.com/seaison/dsh-plugin-naiwa-theme.git
 cd dsh-plugin-naiwa-theme
-```
-
-在项目根目录的 DSH 终端执行：
-
-```sh
 dsh plugin --profile desktop add "link:$(pwd)"
 ```
 
-Web 对应命令：
-
-```sh
-dsh plugin --profile web add "link:$(pwd)"
-```
-
-安装后重启对应 DSH 应用。发布包包含构建后的 `lib/client.js` 和全部本地图片，不需要运行时下载图片或额外的 npm 运行时依赖。若其他主题插件也改写全局界面样式，请在测试时只启用所需主题插件。
-
-## 余额和峰谷
-
-余额由宿主使用 DSH 凭据服务中的 `DEEPSEEK_API_KEY` 调用官方 [`/user/balance`](https://api-docs.deepseek.com/api/get-user-balance/)，仅将余额结果送到界面；密钥不进入浏览器。宿主缓存一分钟并合并并发请求，本机同源限制阻止跨站读取；未配置密钥时显示提示。
-
-根据 [DeepSeek 官方当前规则](https://api-docs.deepseek.com/zh-cn/quick_start/pricing/)，北京时间周一至周五 09:00–12:00、14:00–18:00 为高峰，其余时段、周末与中国法定节假日为空闲时段。内置 2026 年[国务院节假日安排](https://www.gov.cn/zhengce/content/202511/content_7047090.htm)。设置可补充其他年份的节假日。规则核对日期：2026-10-26；未来变动需更新规则和日历。
-
-## 开发与验证
+开发与发布检查：
 
 ```sh
 npm run build
@@ -80,18 +197,24 @@ npm run check:release
 npm pack --pack-destination dist
 ```
 
-源代码位于 `src/`。构建脚本为 DSH 的 `window.__ModuleLoader__` 生成客户端模块，复用宿主 React，以 `ctx.theme.register` 注册配色、以 `settings.section` 和 `shell.overlay` 接入界面。宿主只注册有限集合的图片、音视频分段读取路由和余额路由。
+构建输出复用 DSH 的 React 与插件服务。GitHub Actions 在 Node.js 22 / 24 中执行相同检查，当前完整行为测试为 **65 项**。
 
-需要 Node.js 22.19 以上的 22.x 或 Node.js 24 以上版本，没有 npm 依赖，无需 `npm install`。完整目录、命名和打包规范见 [项目规范](https://github.com/seaison/dsh-plugin-naiwa-theme/blob/main/docs/structure.md)；实机记录见 [验证记录](https://github.com/seaison/dsh-plugin-naiwa-theme/blob/main/docs/validation.md)。`npm pack` 会自动执行上述检查；GitHub Actions 在 Node.js 22／24 中验证相同流程。
+</details>
 
-测试覆盖：图片传输及缓存、余额访问边界、余额格式解析、主题恢复及清理、拼片凹凸边匹配、散落与吸附、北京时间峰谷与周末边界、不同大小奶蛙的高速碰撞与混合堆叠、合并得分、投放冷却、失败与重开，以及本机壁纸恢复/替换/移除/存储失败、视频 Range 请求和启动时间计算。已在 DSH Desktop v2.0.18 / Harness 0.2.1-rc.2 的兼容模式中进行界面实测。
+## 常见问题
 
-## 图片
+**自己的壁纸、便签会上传吗？** 这些数据保存在当前 DSH 环境的本机存储中。导入壁纸使用 IndexedDB，便签和偏好保存在浏览器本机存储。
 
-八张横屏名画壁纸位于 `wallpapers/`（1672×941 PNG），桌宠和三张正方形拼图美图位于 `assets/`（1254×1254 PNG；桌宠含透明通道）。图片用内置 imagegen 生成，角色参考来自[奶蛙博物馆](https://neta.art/app/milk-frog-museum)。完整生成提示词保存在相应目录的 JSON 文件中；新增四幅的提示词为 `wallpapers/extra-prompts.json`。启动视频位于 `media/`。
+**为什么余额显示不可用？** 需要在 DSH 凭据服务中配置 `DEEPSEEK_API_KEY`；余额通过宿主读取官方接口，密钥不进入浏览器。没有配置也可以使用其他功能。
 
-代码许可与图像来源见 [NOTICE.md](NOTICE.md)。
+**峰谷信息是什么规则？** 按北京时间显示，内置 2026 年节假日，设置可补充其他年份。规则来源、适用时段与核对日期见 [详细手册](https://github.com/seaison/dsh-plugin-naiwa-theme/blob/main/docs/usage.md#余额和峰谷)。
 
-桌宠动画来自用户提供的 `139-奶龙抽象表情包.gif`（224×224，80 帧，约 5.34 秒）。保留原帧像素与时序，转换成帧图集；聊天区用 Canvas 渲染，仅清除连接到画面边缘的白底，保留嘴里的白牙。同一素材的静止帧用于待机，原有静态插画仍用于菜单和小游戏。系统减少动态效果开启时，大笑使用静止表情。转换脚本为 `scripts/prepare-pet-animation.py`，用户原文件未修改。
+**没有听到启动音或游戏 BGM？** 浏览器可能限制自动播放，点击界面中的播放按钮即可重试；也可以在设置中检查声音开关与音量。
 
-云朵表情使用用户提供的 `144`、`143`、`141`、`140`、`135`、`131`、`125`、`115`、`107`、`099` 号原始 GIF，文件未修改。九张为多帧动画，141 号原文件为单帧 GIF。文件清单与原始 SHA-256 记录于 `media/reactions.json`，全部随插件打包，离线显示。
+## 使用手册与素材来源
+
+[详细使用手册](https://github.com/seaison/dsh-plugin-naiwa-theme/blob/main/docs/usage.md) · [更新记录](https://github.com/seaison/dsh-plugin-naiwa-theme/blob/main/CHANGELOG.md) · [项目规范](https://github.com/seaison/dsh-plugin-naiwa-theme/blob/main/docs/structure.md) · [验证记录](https://github.com/seaison/dsh-plugin-naiwa-theme/blob/main/docs/validation.md) · [反馈问题](https://github.com/seaison/dsh-plugin-naiwa-theme/issues)
+
+名画壁纸、角色插画与摸鱼钟图集由内置 imagegen 生成，提示词随仓库保留；角色参考来自 [奶蛙博物馆](https://neta.art/app/milk-frog-museum)。原始 GIF、笑声及用户提供视频的来源分别记录于 [NOTICE.md](https://github.com/seaison/dsh-plugin-naiwa-theme/blob/main/NOTICE.md)，这些素材的权利范围与代码的 MIT 许可分别说明。
+
+<p align="center"><sub>奶蛙已经到了，你也慢慢来。🐸</sub></p>

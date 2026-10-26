@@ -10,6 +10,7 @@
 | `scripts/` | 客户端构建、发布审计及可选素材处理工具 | 否 |
 | `tests/` | Node 内置测试，无 npm 测试依赖 | 否 |
 | `docs/` | 目录规范与验证记录 | 否 |
+| `docs/images/` | 仓库首页选用的项目图标与实机展示图 | 否 |
 | `.github/workflows/` | Node.js 22／24 持续集成 | 否 |
 | `dist/` | 本机生成的安装包，作为 GitHub Release 附件分发 | 否 |
 
