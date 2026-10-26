@@ -11,6 +11,7 @@
 - 新便签默认在右上角生成，连续新增向左下方错开，已有便签的保存位置保留。实机新增第 7 张空白便签确认右上角位置，原有固定与复制功能继续保留。
 - 完整构建、一致性检查及 65 项测试全部通过，包含新增时钟持久化、暂停、跨日计数、组件状态与便签初始位置检查。包内客户端与工作目录一致，29 个资源 SHA-256 全部匹配；加入正式版更新记录后，共 48 个打包文件。
 - 正式发布审计核对 92 个 Git 文件的文本编码、换行、JSON、JavaScript 语法、文件大小、符号链接、凭据模式和个人绝对路径，全部通过。调试环境、缓存、截图、参考原件及历史压缩包由 Git 忽略；发布包另用文件白名单检查。补齐 `.editorconfig`、`.gitattributes`、通用安装命令、仓库元数据、`CHANGELOG.md` 与 `docs/structure.md`；新增 Node.js 22／24 GitHub Actions。
+- 全新检出不包含 `dist/`，构建脚本会自动创建输出目录，使 `npm pack --pack-destination dist` 可以直接运行。GitHub 检查独立验证 Node.js 22／24 的完整测试、发布审计与客户端可复现构建。
 - 插件包：`dist/dsh-plugin-naiwa-theme-0.8.0.tgz`；SHA-256：`cf8b2fec7bb380ac53d4992dfe86769cd004f423feccc0dff8ccb850eb3eb8fd`；同目录附 `SHA256SUMS.txt`。
 - 实机截图：`docs/screenshots/desktop-focus-clock-ready.png`、`desktop-focus-clock-running.png`、`desktop-focus-pet-reading.png`、`desktop-focus-reminder-sign.png`、`desktop-focus-break-stretch.png`、`desktop-note-upper-right-focus.png`、`desktop-startup-growing-caption.png`。
 

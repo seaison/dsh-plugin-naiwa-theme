@@ -68,6 +68,7 @@ if (process.argv.includes('--check')) {
   console.log('Client bundle, manifest and all asset hashes are up to date.');
 } else {
   await mkdir(new URL('lib/', root), { recursive: true });
+  await mkdir(new URL('dist/', root), { recursive: true });
   for (const [path, content] of outputs) await writeFile(new URL(path, root), content);
   console.log('Built eight native DSH themes, local wallpaper import and startup film. No runtime downloads.');
 }
