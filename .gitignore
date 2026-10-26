@@ -1,0 +1,16 @@
+node_modules/
+.cache/
+.dev-dsh/
+dist/
+*.tgz
+*.zip
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+reference-media/
+docs/screenshots/

@@ -1,0 +1,52 @@
+.np-dialog-focus { width: min(600px, 100%); }
+.nf-panel { color: #526543; font-family: -apple-system, 'PingFang SC', sans-serif; }
+.nf-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.nf-heading small { color: #a0a38b; font-size: 8px; letter-spacing: .14em; }
+.nf-heading h3 { margin: 9px 0 0; font: 500 21px/1.5 'Songti SC', serif; }
+.nf-heading > span { white-space: nowrap; font-size: 10px; padding: 7px 10px; border: 1px solid #a9b68c40; border-radius: 20px; background: #eff2e2; }
+.nf-mode { display: flex; gap: 5px; padding: 4px; margin: 24px auto 0; width: max-content; max-width: 100%; border-radius: 20px; background: #e9eddf; }
+.nf-mode button { border: 0; border-radius: 17px; padding: 9px 22px; background: transparent; color: #90977e; font-family: inherit; font-size: 11px; line-height: 1.4; cursor: pointer; }
+.nf-mode button[aria-pressed='true'] { background: #fffdf4; box-shadow: 0 2px 5px #687b3710; color: #607a46; }
+.nf-scene { display: flex; justify-content: center; align-items: center; gap: 20px; padding: 22px 8px; margin: 12px 0 8px; border-radius: 24px; background: radial-gradient(ellipse at 75% 85%, #e2e9ca88, transparent 60%), linear-gradient(130deg, #fbf5df88, #f4f6e733); }
+.nf-dial { position: relative; width: 180px; height: 180px; flex: 0 0 auto; }
+.nf-dial svg { display: block; width: 100%; height: 100%; transform: rotate(-90deg); }
+.nf-dial circle { fill: none; stroke-width: 2.5; }
+.nf-ring-track { stroke: #dbe3c8; }
+.nf-ring-progress { stroke: #8ba565; stroke-linecap: round; transition: stroke-dashoffset .4s linear; }
+.nf-dial > div { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 9px; }
+.nf-dial small { font-size: 9px; color: #9ba287; }
+.nf-dial output { font: 400 43px/1.1 -apple-system, sans-serif; font-variant-numeric: tabular-nums; letter-spacing: -.04em; color: #627b47; }
+.nf-dial span { font-size: 10px; color: #a0a58c; letter-spacing: .15em; }
+.nf-character { position: relative; display: block; flex: 0 1 190px; width: 190px; height: 190px; background-size: 200% 200%; background-repeat: no-repeat; filter: drop-shadow(0 5px 4px #3545270c); transform-origin: 50% 90%; container-type: inline-size; }
+.np-pet-button .nf-character { width: 100%; height: 100%; pointer-events: none; }
+.nf-character.is-reading { animation: nf-read 4.2s ease-in-out infinite; }
+.nf-character.is-stretch { animation: nf-stretch 3s ease-in-out infinite; }
+.nf-character.is-tea { animation: nf-sip 4.8s ease-in-out infinite; }
+.nf-character.is-paused { animation-play-state: paused; }
+.nf-sign-text { position: absolute; left: 23%; top: 34%; width: 52%; height: 15%; display: flex; align-items: center; justify-content: center; color: #6f7552; font: 600 clamp(8px, 8cqw, 14px)/1.3 'PingFang SC', sans-serif; white-space: nowrap; }
+.nf-pet-time { position: absolute; left: 50%; top: -12px; transform: translateX(-50%); padding: 5px 9px; border: 1px solid #acbd8840; border-radius: 20px; background: #fffdf0ed; color: #718457; font: 10px/1.3 -apple-system, 'PingFang SC', sans-serif; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.np-pet.is-left .nf-sign-text { transform: scaleX(-1); }
+.np-pet.is-left .nf-pet-time { transform: translateX(-50%) scaleX(-1); }
+.nf-actions { display: flex; justify-content: center; gap: 10px; margin: 12px 0 22px; }
+.nf-actions .nw-button { min-width: 112px; padding: 11px 18px; }
+.nf-durations { display: flex; justify-content: center; align-items: center; gap: 12px; flex-wrap: wrap; margin: 0; padding: 18px 12px; border: 1px solid #a9b68b3b; border-radius: 15px; }
+.nf-durations legend { padding: 0 9px; font-size: 10px; color: #94a17f; }
+.nf-durations label { display: flex; align-items: center; gap: 7px; font-size: 11px; color: #8b977c; }
+.nf-durations input { box-sizing: border-box; width: 54px; border: 1px solid #b8c59a66; border-radius: 7px; padding: 7px 4px; text-align: center; background: #fffdf4; color: #61784b; font: 12px/1.3 -apple-system, sans-serif; }
+.nf-durations:disabled { opacity: .55; }
+.nf-help { margin: 14px 0 0; text-align: center; color: #a1a48e; font-size: 10px; line-height: 1.8; }
+.nf-pet-reminder { position: absolute; z-index: 2; }
+.nf-reminder { box-sizing: border-box; border: 1px solid #d6debd; border-radius: 19px; padding: 15px 17px; color: #60744d; background: #fffdf1; box-shadow: 0 7px 24px #35452716; font: 11px/1.6 -apple-system, 'PingFang SC', sans-serif; }
+.nf-reminder strong { font-size: 13px; font-weight: 600; }
+.nf-reminder p { color: #98a185; margin: 6px 0 11px; font-size: 10px; }
+.nf-reminder > div { display: flex; gap: 14px; align-items: center; }
+.nf-reminder button { cursor: pointer; }
+.nf-panel > .nf-reminder { margin-bottom: 15px; }
+.nf-fallback-reminder { position: fixed; z-index: 1050; right: 28px; bottom: 24px; width: 280px; }
+.nf-fallback-reminder .nf-character { margin: 0 auto -12px; width: 145px; height: 145px; }
+.nw-settings .nf-panel { padding: 5px 8px; }
+@keyframes nf-read { 50% { transform: translateY(-2px) rotate(-.7deg); } }
+@keyframes nf-stretch { 50% { transform: scaleY(1.035) translateY(-2px); } }
+@keyframes nf-sip { 35%, 65% { transform: rotate(-2deg) translateY(-1px); } }
+@media (max-width: 620px) { .nf-heading { align-items: flex-start; gap: 8px; } .nf-heading h3 { font-size: 17px; } .nf-heading > span { font-size: 9px; padding: 6px 8px; } .nf-scene { gap: 0; } .nf-dial { width: 150px; height: 150px; } .nf-character { flex-basis: 150px; width: 150px; height: 150px; } .nf-dial output { font-size: 36px; } .nf-durations { gap: 10px; } }
+@media (prefers-reduced-motion: reduce) { .nf-character { animation: none !important; } .nf-ring-progress { transition: none; } }

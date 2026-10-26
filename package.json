@@ -1,0 +1,33 @@
+{
+  "name": "dsh-plugin-naiwa-theme",
+  "version": "0.8.0",
+  "description": "DSH 奶蛙美术馆：名画壁纸、爆笑桌宠、摸鱼钟、便利贴和两个离线小游戏。",
+  "repository": { "type": "git", "url": "git+https://github.com/seaison/dsh-plugin-naiwa-theme.git" },
+  "homepage": "https://github.com/seaison/dsh-plugin-naiwa-theme#readme",
+  "bugs": { "url": "https://github.com/seaison/dsh-plugin-naiwa-theme/issues" },
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib", "assets/*.png", "assets/*prompts.json", "wallpapers/*.png", "wallpapers/README.md", "wallpapers/*prompts.json", "media", "cordis.patch.yml", "README.md", "CHANGELOG.md", "NOTICE.md", "LICENSE"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "inject": ["@deepseek-ai/dsh-client-ui-theme", "@deepseek-ai/dsh-client-ui-slots", "@deepseek-ai/dsh-client-ui-settings"]
+    }
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node --check src/client.mjs && node --check src/notes.mjs && node --check src/focus.mjs && node --check src/focus-core.mjs && node --check src/notes-core.mjs && node --check src/museum-icon.mjs && node --check src/pet.mjs && node --check src/experience.mjs && node --check src/audio.mjs && node --check src/music.mjs && node --check src/animation-core.mjs && node --check src/pet-core.mjs && node --check src/media.mjs && node --check src/experience-core.mjs && node --check src/game-core.mjs && node --check lib/index.js && node --check lib/balance.mjs && node --check lib/client.js && node scripts/build.mjs --check",
+    "test": "node --test tests/*.test.mjs",
+    "check:release": "node scripts/check-release.mjs",
+    "prepack": "npm run build && npm run check && npm test && npm run check:release"
+  },
+  "engines": { "node": "^22.19.0 || >=24" },
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "theme", "naiwa", "milk-frog", "wallpaper"],
+  "license": "MIT"
+}

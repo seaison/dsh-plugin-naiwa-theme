@@ -1,0 +1,224 @@
+[
+  {
+    "folder": "wallpapers",
+    "file": "01-pine-forest-morning.png",
+    "sha256": "58ae6796af8da2876e4b19550c40175581d9a7cac3737c3d376a4ceb550aa946",
+    "bytes": 3344668,
+    "width": 1672,
+    "height": 941
+  },
+  {
+    "folder": "wallpapers",
+    "file": "02-lantern-garden-dusk.png",
+    "sha256": "409864532f42a10fb2e2319b6bb9300f1beecb88e2e09a52b2448b12d90303e5",
+    "bytes": 3473325,
+    "width": 1672,
+    "height": 941
+  },
+  {
+    "folder": "wallpapers",
+    "file": "03-skagen-blue-hour.png",
+    "sha256": "8b00561803ead69b736abc43c9859499fa2b04dfc5c190fc423e2fe95205cd01",
+    "bytes": 3034861,
+    "width": 1672,
+    "height": 941
+  },
+  {
+    "folder": "wallpapers",
+    "file": "04-red-fuji-clear-morning.png",
+    "sha256": "78a3106fa59418ff563d9146e469e099ca7cf353503edae6587923ba7aff0113",
+    "bytes": 3661168,
+    "width": 1672,
+    "height": 941
+  },
+  {
+    "folder": "wallpapers",
+    "file": "05-starry-frog-night.png",
+    "sha256": "36d8634236c7531ca13897f35ccf8204898e72c83295a182bd0e4641e7591f33",
+    "bytes": 3753596,
+    "width": 1672,
+    "height": 941
+  },
+  {
+    "folder": "wallpapers",
+    "file": "06-pearl-earring-frog.png",
+    "sha256": "1a2a9f0f5e6a0a75158860ce084f434e9bc44c3452fac8549247e6ff60d40ab9",
+    "bytes": 2484994,
+    "width": 1672,
+    "height": 941
+  },
+  {
+    "folder": "wallpapers",
+    "file": "07-the-frog-scream.png",
+    "sha256": "66288f7dccc4b54c30a61f7bed2eed067d09073850cc1ac5adca5d04294a9d0d",
+    "bytes": 3225844,
+    "width": 1672,
+    "height": 941
+  },
+  {
+    "folder": "wallpapers",
+    "file": "08-water-lily-frog.png",
+    "sha256": "4bc7c2263969f6b2830698c614c819f63d395fcee9e25511dd355f3d4cb19a99",
+    "bytes": 3428908,
+    "width": 1672,
+    "height": 941
+  },
+  {
+    "folder": "assets",
+    "file": "pet-idle.png",
+    "sha256": "03ed5676d48d2d188c8d2741df53c982f9c1b15176526db92b7ab1438c02e7c5",
+    "bytes": 710695,
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "folder": "assets",
+    "file": "pet-laugh.png",
+    "sha256": "5538e75c3004a6c5af00cb735abf184298eb958fbcac12e2bbd1c2c47e86a2ae",
+    "bytes": 800680,
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "folder": "assets",
+    "file": "pet-focus-states.png",
+    "sha256": "72894520aaf5711f29691c126ffb3c89bd23f9388dfd120a0aab028726099f93",
+    "bytes": 1048551,
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "folder": "assets",
+    "file": "puzzle-white-ballet.png",
+    "sha256": "1e99dcfd1d86fcb2fee0538ba15d4f694fd1ac6ea420fa1adf387acbcf857540",
+    "bytes": 2524729,
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "folder": "assets",
+    "file": "puzzle-black-runway.png",
+    "sha256": "0f9c9371ef90b92a150a79bd0665478b6660d2ad310c0b1c9be2e43331bb4616",
+    "bytes": 2707732,
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "folder": "assets",
+    "file": "puzzle-twin-divas.png",
+    "sha256": "99314059d98ad14e4d9782d53003b12e0edd73b41cf4218fa8370b5b291a05c3",
+    "bytes": 2985092,
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "folder": "media",
+    "file": "startup.mp4",
+    "sha256": "2fd17e3a8bdd0aca7a57a5750e3610356c0423deeb0f64320487447675fe43f5",
+    "bytes": 2522478
+  },
+  {
+    "folder": "media",
+    "file": "startup-poster.jpg",
+    "sha256": "f1f8f7194adc7009486eba000bfa5a95286cd092038a430ed7721b6fd45b0022",
+    "bytes": 117825
+  },
+  {
+    "folder": "media",
+    "file": "pet-laugh.mp3",
+    "sha256": "716c2d58d02c6543057a7adf6637b8224886f6f0d7c06ffa34bfdf18dde72c33",
+    "bytes": 125804
+  },
+  {
+    "folder": "media",
+    "file": "startup-piano.m4a",
+    "sha256": "690c0eb73aeeb3e5111edaed6603a5a3a4eaa7b881ead0724310aae82a8a7501",
+    "bytes": 163820
+  },
+  {
+    "folder": "media",
+    "file": "pet-laugh-frames.png",
+    "sha256": "3bee5571a72adc0cb5293c5ea14d23176775ec6d9d5eea3e53a94f4763769757",
+    "bytes": 1340371
+  },
+  {
+    "folder": "media",
+    "file": "reaction-144.gif",
+    "sha256": "b13d89f24ae8ffed3f8c9a76ae49b5aee4d8b012d5fdc8da03681101d4ae3785",
+    "bytes": 842947,
+    "width": 150,
+    "height": 150
+  },
+  {
+    "folder": "media",
+    "file": "reaction-143.gif",
+    "sha256": "b045b4d8d54ce5cc8a911a6b31aae284b3c57268778fe6db5a0e7f8edd563117",
+    "bytes": 888416,
+    "width": 144,
+    "height": 144
+  },
+  {
+    "folder": "media",
+    "file": "reaction-141.gif",
+    "sha256": "49f574cb874803339f62a3302c6891c887021a1ffef9fa9714a24001f2aa6591",
+    "bytes": 854983,
+    "width": 463,
+    "height": 400
+  },
+  {
+    "folder": "media",
+    "file": "reaction-140.gif",
+    "sha256": "277899831e11b581a823b7fbdba134d11376aedcad24d9066d5298d90b0087c4",
+    "bytes": 754845,
+    "width": 108,
+    "height": 132
+  },
+  {
+    "folder": "media",
+    "file": "reaction-135.gif",
+    "sha256": "3e8fbdd22c3af9525d478c9c864e5974ca82d7dfb3f89b5fb8fa19165f06c253",
+    "bytes": 724574,
+    "width": 150,
+    "height": 221
+  },
+  {
+    "folder": "media",
+    "file": "reaction-131.gif",
+    "sha256": "1f419c5f5c6f47c3e26607e310c3099febfcb560cd04ba4f94447911da6f8b10",
+    "bytes": 823246,
+    "width": 160,
+    "height": 160
+  },
+  {
+    "folder": "media",
+    "file": "reaction-125.gif",
+    "sha256": "da8bbba40f9d3e2a046665ac5ea934ae6052ab1a648c2dce477e9f4a011932bb",
+    "bytes": 805370,
+    "width": 240,
+    "height": 328
+  },
+  {
+    "folder": "media",
+    "file": "reaction-115.gif",
+    "sha256": "b325724058742ee96813f2a309e1db854b17943fda5e61f04f6f919243bfdb4b",
+    "bytes": 868892,
+    "width": 200,
+    "height": 223
+  },
+  {
+    "folder": "media",
+    "file": "reaction-107.gif",
+    "sha256": "b7cdf56a3bdacee59a1adb747aad13a60f5de7cdc0a248f1b48a9abffdb5aa34",
+    "bytes": 756091,
+    "width": 120,
+    "height": 160
+  },
+  {
+    "folder": "media",
+    "file": "reaction-099.gif",
+    "sha256": "0b05c633a4284e619af11425e9b3f9c3471e3bd0978328f1cf3c6a8d9ca69328",
+    "bytes": 738738,
+    "width": 160,
+    "height": 160
+  }
+]

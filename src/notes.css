@@ -1,0 +1,31 @@
+/* A little Polaroid, hung from a flax cord with a wooden clothes peg. */
+.nw-sticky-layer { position: fixed; inset: 0; z-index: 120; overflow: clip; pointer-events: none; }
+.nw-sticky-note { box-sizing: border-box; position: absolute; display: flex; flex-direction: column; padding: 0 17px 14px; color: #54564e; pointer-events: auto; font: 12px/1.6 -apple-system, 'PingFang SC', sans-serif; transform: rotate(var(--nw-note-tilt)); transform-origin: 50% 24px; isolation: isolate; }
+.nw-sticky-note::before { content: ''; position: absolute; z-index: -1; inset: 43px 0 0; border: 1px solid #e4e0d6; border-radius: 2px; background: linear-gradient(120deg, #fffefa, #faf9f4 72%, #f4f2ea); box-shadow: 2px 9px 16px #302d2326, 0 1px 2px #302d2314; pointer-events: none; }
+.nw-note-handle { position: relative; display: flex; justify-content: space-between; align-items: center; min-height: 89px; padding-top: 47px; box-sizing: border-box; flex: 0 0 auto; gap: 8px; touch-action: none; user-select: none; cursor: grab; }
+.nw-note-hanging { position: absolute; top: 0; left: -17px; right: -17px; height: 65px; pointer-events: none; }
+.nw-note-rope { position: absolute; top: 0; left: -28px; width: calc(100% + 56px); height: 46px; overflow: visible; filter: drop-shadow(0 1px 1px #42331c20); }
+.nw-note-wood-clip { position: absolute; top: 1px; left: calc(50% - 11px); width: 25px; height: 58px; transform: rotate(8deg); filter: drop-shadow(1px 2px 1px #51402b30); }
+.nw-sticky-note.is-moving { z-index: 1; }
+.nw-sticky-note.is-moving::before { box-shadow: 3px 17px 28px #302d2333, 0 1px 2px #302d2314; }
+.nw-sticky-note.is-moving .nw-note-handle { cursor: grabbing; }
+.nw-sticky-note.is-pinned .nw-note-handle { cursor: default; }
+.nw-note-brand { display: flex; align-items: center; gap: 6px; min-width: 0; }
+.nw-note-brand img { width: 18px; height: 18px; pointer-events: none; filter: saturate(.65); }
+.nw-note-brand strong { color: #73776a; font-size: 10px; font-weight: 500; letter-spacing: .08em; }
+.nw-note-brand small { color: #a7a497; font-size: 8px; margin-left: 2px; font-variant-numeric: tabular-nums; }
+.nw-sticky-note .nw-note-close { border: 0; background: transparent; color: #a7a497; border-radius: 50%; cursor: pointer; }
+.nw-sticky-note .nw-note-close:hover { background: #eae7de; color: #686b60; }
+.nw-note-input { box-sizing: border-box; display: block; min-width: 0; min-height: 0; flex: 1; width: 100%; border: 1px solid #e6e3da; border-radius: 0; padding: 12px 13px; resize: none; color: #55594f; background: repeating-linear-gradient(0deg, #8e8a7605 0 1px, transparent 1px 4px), linear-gradient(135deg, #eeede6, #f4f3ec 55%, #e9e8df); box-shadow: inset 0 1px 5px #55513b08; font: 13px/1.9 'Kaiti SC', 'STKaiti', 'Songti SC', serif; outline: none; }
+.nw-note-input::placeholder { color: #a4a396; }
+.nw-note-input:focus { border-color: #b3b6a2; }
+.nw-note-footer { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 14px; }
+.nw-note-footer::after { content: 'MILK FROG · LITTLE MOMENTS'; flex-basis: 100%; color: #b0ad9e; text-align: center; font: 6px/1.5 -apple-system, sans-serif; letter-spacing: .18em; padding-top: 1px; }
+.nw-note-footer button { flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 30px; padding: 5px 7px; border: 1px solid #d9d7cb; border-radius: 3px; background: transparent; color: #858575; font: 10px/1.4 -apple-system, 'PingFang SC', sans-serif; cursor: pointer; }
+.nw-note-footer button:hover:not(:disabled) { background: #edeee4; border-color: #b6bda3; color: #6f7a5c; }
+.nw-note-footer button[aria-pressed='true'] { background: #eeeee3; color: #788260; border-color: #c5cbb4; }
+.nw-note-footer button:disabled { opacity: .45; cursor: default; }
+.nw-sticky-note button:focus-visible, .nw-note-handle:focus-visible { outline: 2px solid #91a369; outline-offset: 2px; }
+.nw-note-status { display: block; padding-top: 5px; color: #9d794e; font-size: 10px; }
+body[data-naiwa-startup] .nw-sticky-layer { visibility: hidden; }
+@media (max-height: 420px) { .nw-note-handle { min-height: 75px; padding-top: 38px; } .nw-sticky-note::before { top: 34px; } .nw-note-hanging { transform: translateY(-7px); } .nw-note-footer { padding-top: 8px; } .nw-note-footer::after { display: none; } }
