@@ -1,6 +1,6 @@
 {
   "name": "dsh-plugin-naiwa-theme",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "DSH 奶蛙美术馆：名画壁纸、爆笑桌宠、摸鱼钟、便利贴和两个离线小游戏。",
   "repository": { "type": "git", "url": "git+https://github.com/seaison/dsh-plugin-naiwa-theme.git" },
   "homepage": "https://github.com/seaison/dsh-plugin-naiwa-theme#readme",

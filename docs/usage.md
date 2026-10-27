@@ -31,10 +31,10 @@
 
 ## 安装正式版
 
-从 Release 下载 `dsh-plugin-naiwa-theme-0.8.0.tgz` 与 `SHA256SUMS.txt`，在下载目录的 DSH 终端执行，Desktop 使用 `desktop` profile：
+从 Release 下载 `dsh-plugin-naiwa-theme-0.8.1.tgz` 与 `SHA256SUMS.txt`，在下载目录的 DSH 终端执行，Desktop 使用 `desktop` profile：
 
 ```sh
-dsh plugin --profile desktop add ./dsh-plugin-naiwa-theme-0.8.0.tgz
+dsh plugin --profile desktop add ./dsh-plugin-naiwa-theme-0.8.1.tgz
 ```
 
 Web 将 `--profile desktop` 改为 `--profile web`。安装后重新启动相应 DSH 应用。包内包含构建后的客户端和全部运行素材，无需额外下载图片或安装 npm 运行时依赖。macOS 可使用 `shasum -a 256 -c SHA256SUMS.txt` 核对附件。
@@ -65,6 +65,8 @@ dsh plugin --profile web add "link:$(pwd)"
 ## 余额和峰谷
 
 余额由宿主使用 DSH 凭据服务中的 `DEEPSEEK_API_KEY` 调用官方 [`/user/balance`](https://api-docs.deepseek.com/api/get-user-balance/)，仅将余额结果送到界面；密钥不进入浏览器。宿主缓存一分钟并合并并发请求，本机同源限制阻止跨站读取；未配置密钥时显示提示。
+
+从 0.8.1 起，读取时自动清理 Key 首尾空白；凭据服务临时异常后可在下一次查询重试。10 秒总超时覆盖凭据解析、网络和响应解码，气泡会显示「余额读取超时，请稍后重试」；迟到结果被丢弃，不会覆盖后续查询。登录账号与 API Key 为两种独立路径，本功能仍读取上述官方 API Key 的余额。
 
 根据 [DeepSeek 官方当前规则](https://api-docs.deepseek.com/zh-cn/quick_start/pricing/)，北京时间周一至周五 09:00–12:00、14:00–18:00 为高峰，其余时段、周末与中国法定节假日为空闲时段。内置 2026 年[国务院节假日安排](https://www.gov.cn/zhengce/content/202511/content_7047090.htm)。设置可补充其他年份的节假日。规则核对日期：2026-10-26；未来变动需更新规则和日历。
 

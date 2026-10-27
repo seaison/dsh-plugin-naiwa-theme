@@ -8,7 +8,7 @@
 
 八幅名画，一只会大笑的奶蛙，还有恰到好处的摸鱼时间。
 
-[![正式版 v0.8.0](https://img.shields.io/badge/release-v0.8.0-E8BD4B?style=flat-square&labelColor=435543)](https://github.com/seaison/dsh-plugin-naiwa-theme/releases/latest)
+[![正式版 v0.8.1](https://img.shields.io/badge/release-v0.8.1-E8BD4B?style=flat-square&labelColor=435543)](https://github.com/seaison/dsh-plugin-naiwa-theme/releases/latest)
 [![构建与测试](https://github.com/seaison/dsh-plugin-naiwa-theme/actions/workflows/ci.yml/badge.svg)](https://github.com/seaison/dsh-plugin-naiwa-theme/actions/workflows/ci.yml)
 [![代码采用 MIT 许可](https://img.shields.io/badge/code-MIT-91AB66?style=flat-square&labelColor=435543)](https://github.com/seaison/dsh-plugin-naiwa-theme/blob/main/NOTICE.md)
 
@@ -162,14 +162,14 @@
 
 ## 快速安装
 
-**当前正式版 v0.8.0**，已在 **DSH Desktop 2.0.18 / Harness 0.2.1-rc.2 兼容模式**实机验证。
+**当前正式版 v0.8.1**，修复余额读取的输入清理、异常恢复和总超时。主题界面的实机验证环境为 **DSH Desktop 2.0.18 / Harness 0.2.1-rc.2 兼容模式**；本次余额修复通过自动化回归验证。
 
-**1.** 从 **[Releases 下载完整安装包](https://github.com/seaison/dsh-plugin-naiwa-theme/releases/latest)** `dsh-plugin-naiwa-theme-0.8.0.tgz` 和 `SHA256SUMS.txt`。
+**1.** 从 **[Releases 下载完整安装包](https://github.com/seaison/dsh-plugin-naiwa-theme/releases/latest)** `dsh-plugin-naiwa-theme-0.8.1.tgz` 和 `SHA256SUMS.txt`。
 
 **2.** 在下载目录的 DSH 终端执行：
 
 ```sh
-dsh plugin --profile desktop add ./dsh-plugin-naiwa-theme-0.8.0.tgz
+dsh plugin --profile desktop add ./dsh-plugin-naiwa-theme-0.8.1.tgz
 ```
 
 **3.** 重启对应 DSH 应用，在设置中打开「奶蛙美术馆」。
@@ -205,7 +205,7 @@ npm pack --pack-destination dist
 
 **自己的壁纸、便签会上传吗？** 这些数据保存在当前 DSH 环境的本机存储中。导入壁纸使用 IndexedDB，便签和偏好保存在浏览器本机存储。
 
-**为什么余额显示不可用？** 需要在 DSH 凭据服务中配置 `DEEPSEEK_API_KEY`；余额通过宿主读取官方接口，密钥不进入浏览器。没有配置也可以使用其他功能。
+**为什么余额显示不可用？** 需要在 DSH 凭据服务中配置官方 `DEEPSEEK_API_KEY`；余额通过宿主读取官方接口，密钥不进入浏览器。0.8.1 已修复 Key 首尾空白、凭据异常后无法重试及读取超时问题；显示「余额读取超时」时，可检查宿主网络并等待下次刷新。没有配置也可以使用其他功能。
 
 **峰谷信息是什么规则？** 按北京时间显示，内置 2026 年节假日，设置可补充其他年份。规则来源、适用时段与核对日期见 [详细手册](https://github.com/seaison/dsh-plugin-naiwa-theme/blob/main/docs/usage.md#余额和峰谷)。
 

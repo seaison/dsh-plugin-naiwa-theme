@@ -10,6 +10,7 @@
 - 0.5.0 的云朵表情采用用户提供的 144、143、141、140、135、131、125、115、107、099 号 GIF，按原文件复制到 `media/reaction-*.gif`，不重画、不转码。源文件名与 SHA-256 见 `media/reactions.json`；最初创作者未核实，素材不纳入代码 MIT 许可。
 - 大笑音频：用户指定采用[奶-hub 表情库的收录文件](https://github.com/lin-alg/NaiLoong/blob/main/assets/audio/nailong_laugh.mp3)，保存为 `media/pet-laugh.mp3`，未变速、重编码或重新合成。可核实收录与下载来源，未确认最初创作者或首发文件；相关声音权利归原权利人。此音频不纳入插件代码的 MIT 许可。
 - API 余额、时段规则和节假日数据来源链接见 README。
+- 0.8.1 的余额输入清理、异常重试和总超时策略参考用户提供的 `dsh-balance-reader` 1.0.0 源码包（来源 EVA 主题 0.51.2，MIT 许可）。Copyright (c) 2026 The dsh-eva-magi-theme authors。许可条款见随包 `LICENSE`；原源码包的归档摘要和对照结果见仓库 `docs/balance-diagnosis.md`。
 
 - 启动动画素材：用户提供的《风经过的地方》视频，保持原文件内容，播放时慢放并应用模糊过渡。
 - 钢琴启动音：本项目原创 Cmaj9 → Fmaj9 → Gsus2 → Cmaj9 琶音短句，使用 macOS 系统原声钢琴音色离线渲染，加入轻微空间混响、响度处理和尾声淡出；只分发渲染音频，不分发系统音色库。音符与渲染代码见 `scripts/render-startup-piano.swift`。

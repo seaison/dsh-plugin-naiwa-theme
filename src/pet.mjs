@@ -477,7 +477,7 @@ export function createPetFeatures(React, assets, controller, MuseumPanel, core, 
     };
     const open = name => { setMenu(null); setModal(name); };
     const peak = core.peakInfo(now, prefs.holidays.split(/[,，\s]+/).filter(Boolean));
-    const balanceText = balance.ok ? balance.text + (balance.stale ? ' · 上次结果' : '') : ({ NO_KEY: '未配置 API Key', AUTH: 'API Key 不可用', LOADING: '余额读取中…', FORBIDDEN: '当前连接不支持查询' }[balance.code] || '余额暂不可用');
+    const balanceText = balance.ok ? balance.text + (balance.stale ? ' · 上次结果' : '') : ({ NO_KEY: '未配置 API Key', AUTH: 'API Key 不可用', LOADING: '余额读取中…', TIMEOUT: '余额读取超时，请稍后重试', FORBIDDEN: '当前连接不支持查询' }[balance.code] || '余额暂不可用');
     const titles = { puzzle: '奶蛙美图 · 拼图', merge: '合成大奶蛙', focus: '奶蛙摸鱼钟', settings: '奶蛙设置' };
     const selectedReaction = reactions[reaction];
     const cloud = core.placePetCloud(pos, prefs.petSize, { width: window.innerWidth, height: window.innerHeight }, Boolean(selectedReaction));
